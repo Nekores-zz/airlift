@@ -25,7 +25,7 @@ function Slide2() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Grid item sm="4">
+          <Grid item sm={4}>
             <h1> {text}</h1>
             <Title color="purple">Install AirLift to get coins</Title>
             <Paragraph>
