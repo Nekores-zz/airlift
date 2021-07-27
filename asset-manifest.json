@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/airlift/static/css/main.bdeec21d.chunk.css",
+    "main.js": "/airlift/static/js/main.76b0834b.chunk.js",
+    "main.js.map": "/airlift/static/js/main.76b0834b.chunk.js.map",
+    "runtime-main.js": "/airlift/static/js/runtime-main.dd8e3752.js",
+    "runtime-main.js.map": "/airlift/static/js/runtime-main.dd8e3752.js.map",
+    "static/js/2.2957530a.chunk.js": "/airlift/static/js/2.2957530a.chunk.js",
+    "static/js/2.2957530a.chunk.js.map": "/airlift/static/js/2.2957530a.chunk.js.map",
+    "static/js/3.7385a355.chunk.js": "/airlift/static/js/3.7385a355.chunk.js",
+    "static/js/3.7385a355.chunk.js.map": "/airlift/static/js/3.7385a355.chunk.js.map",
+    "index.html": "/airlift/index.html",
+    "static/css/main.bdeec21d.chunk.css.map": "/airlift/static/css/main.bdeec21d.chunk.css.map",
+    "static/js/2.2957530a.chunk.js.LICENSE.txt": "/airlift/static/js/2.2957530a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd8e3752.js",
+    "static/js/2.2957530a.chunk.js",
+    "static/css/main.bdeec21d.chunk.css",
+    "static/js/main.76b0834b.chunk.js"
+  ]
+}
