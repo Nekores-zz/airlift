@@ -4,7 +4,7 @@ import StatusLoader from "../../components/StatusLoader";
 import { Grid, Container } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import CheckIcon from "@material-ui/icons/Check";
-import ClearIcon from "@material-ui/icons/Clear";
+import { Link } from "react-router-dom";
 
 function Slide1() {
   const [pluginStatus, setPluginStatus] = useState(false);
@@ -55,7 +55,9 @@ function Slide1() {
             {isPlugin ? (
               <>
                 <br />
-                <Button> Get Started</Button>{" "}
+                <Link to="/get-started">
+                  <Button> Get Started</Button>
+                </Link>
               </>
             ) : null}
           </Grid>
