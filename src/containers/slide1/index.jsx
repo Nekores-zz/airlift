@@ -1,14 +1,17 @@
 import "../../pages/App";
 import { Button, Paragraph, Title } from "../../components";
 import StatusLoader from "../../components/StatusLoader";
-import { Grid, Container } from "@material-ui/core";
+import { Grid, Container, withStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import CheckIcon from "@material-ui/icons/Check";
 import { Link } from "react-router-dom";
+import avatar1 from "../../assets/avatar1.png";
+import { styleSheet } from "../../jss/pages/slide1";
 
-function Slide1() {
+function Slide1(props) {
   const [pluginStatus, setPluginStatus] = useState(false);
   const [isPlugin, setIsPlugin] = useState(false);
+  const { classes } = props;
 
   useEffect(() => {
     setTimeout(() => setPluginStatus(true), 3000);
@@ -25,6 +28,7 @@ function Slide1() {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
+          className={isPlugin && classes.root}
         >
           <Grid item sm={4}>
             <Title color="purple">Install AirLift to get coins</Title>
@@ -62,7 +66,7 @@ function Slide1() {
             ) : null}
           </Grid>
           <Grid item>
-            <h1> Image </h1>
+            {!isPlugin ? <img src={avatar1} alt="avatar" /> : null}
           </Grid>
         </Grid>
       </Container>
@@ -70,4 +74,4 @@ function Slide1() {
   );
 }
 
-export default Slide1;
+export default withStyles(styleSheet, { name: "Slide1" })(Slide1);
