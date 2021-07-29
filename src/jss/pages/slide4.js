@@ -25,7 +25,7 @@ export const styleSheet = () => ({
 
     "& .slideshowSlider": {
       whiteSpace: "nowrap",
-      //   transition: "ease 1000ms",
+      transition: "ease 1000ms",
     },
 
     "& .slide": {
