@@ -7,7 +7,10 @@ export const styleSheet = () => ({
     backgroundSize: "cover",
     position: "relative",
     textAlign: "center",
+    backgroundPosition: "center",
+
     backgroundRepeat: "no-repeat",
+
     overflow: "hidden",
     "& h2": {
       color: "white",
@@ -28,7 +31,7 @@ export const styleSheet = () => ({
         position: "absolute",
         left: "80%",
         top: "60%",
-        transition: "0.3s all ease-in-out",
+        transition: "0.2s all ease-in-out",
       },
     },
   },
