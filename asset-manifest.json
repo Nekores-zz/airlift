@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/airlift/static/css/main.6254b000.chunk.css",
-    "main.js": "/airlift/static/js/main.900d26f1.chunk.js",
-    "main.js.map": "/airlift/static/js/main.900d26f1.chunk.js.map",
+    "main.js": "/airlift/static/js/main.213eb90d.chunk.js",
+    "main.js.map": "/airlift/static/js/main.213eb90d.chunk.js.map",
     "runtime-main.js": "/airlift/static/js/runtime-main.6c0a6d59.js",
     "runtime-main.js.map": "/airlift/static/js/runtime-main.6c0a6d59.js.map",
-    "static/js/2.616ebbe5.chunk.js": "/airlift/static/js/2.616ebbe5.chunk.js",
-    "static/js/2.616ebbe5.chunk.js.map": "/airlift/static/js/2.616ebbe5.chunk.js.map",
+    "static/js/2.1bcf2a57.chunk.js": "/airlift/static/js/2.1bcf2a57.chunk.js",
+    "static/js/2.1bcf2a57.chunk.js.map": "/airlift/static/js/2.1bcf2a57.chunk.js.map",
     "static/js/3.330cb8f6.chunk.js": "/airlift/static/js/3.330cb8f6.chunk.js",
     "static/js/3.330cb8f6.chunk.js.map": "/airlift/static/js/3.330cb8f6.chunk.js.map",
     "index.html": "/airlift/index.html",
     "static/css/main.6254b000.chunk.css.map": "/airlift/static/css/main.6254b000.chunk.css.map",
-    "static/js/2.616ebbe5.chunk.js.LICENSE.txt": "/airlift/static/js/2.616ebbe5.chunk.js.LICENSE.txt",
+    "static/js/2.1bcf2a57.chunk.js.LICENSE.txt": "/airlift/static/js/2.1bcf2a57.chunk.js.LICENSE.txt",
     "static/media/avatar1.5b124a25.png": "/airlift/static/media/avatar1.5b124a25.png",
     "static/media/avatar2.e326efbf.png": "/airlift/static/media/avatar2.e326efbf.png",
     "static/media/cover1.97b18bdf.png": "/airlift/static/media/cover1.97b18bdf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6c0a6d59.js",
-    "static/js/2.616ebbe5.chunk.js",
+    "static/js/2.1bcf2a57.chunk.js",
     "static/css/main.6254b000.chunk.css",
-    "static/js/main.900d26f1.chunk.js"
+    "static/js/main.213eb90d.chunk.js"
   ]
 }
