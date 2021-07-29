@@ -30,7 +30,7 @@ function Slide1(props) {
           alignItems="center"
           className={isPlugin && classes.root}
         >
-          <Grid item sm={4}>
+          <Grid item xs={12} sm={10} md={4}>
             <Title color="purple">Install AirLift to get coins</Title>
             <br />
             <Paragraph>
