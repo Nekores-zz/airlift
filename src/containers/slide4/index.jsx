@@ -58,7 +58,7 @@ function Slide4(props) {
       () =>
         setIndex((prevIndex) =>
           prevIndex === mockData.length - 1
-            ? history.push("/welcome")
+            ? console.log("Under construction!")
             : prevIndex + 1
         ),
       5000
