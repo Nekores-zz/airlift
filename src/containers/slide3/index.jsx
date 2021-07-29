@@ -33,7 +33,7 @@ function Slide3(props) {
             alignItems="center"
           >
             <Grid item>
-              <img src={logo} alt="avatar" />
+              <img src={logo} className="avatar" alt="avatar" />
               <div className={classes.bottomPart}>
                 <Paragraph>
                   Change is coming, <br /> Whether you like it or not.

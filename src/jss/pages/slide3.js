@@ -1,6 +1,6 @@
 import cover from "../../assets/cover1.png";
 
-export const styleSheet = () => ({
+export const styleSheet = (theme) => ({
   root: {
     backgroundImage: `url(${cover})`,
     height: "100vh",
@@ -24,6 +24,11 @@ export const styleSheet = () => ({
       width: "100%",
       display: "flex",
       alignItems: "center",
+    },
+    "& .avatar": {
+      [theme.breakpoints.down(767)]: {
+        height: "200px",
+      },
     },
   },
   bottomPart: {
