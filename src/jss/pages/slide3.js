@@ -23,13 +23,6 @@ export const styleSheet = () => ({
       width: "100%",
       display: "flex",
       alignItems: "center",
-      "& .circular-cursor": {
-        cursor: "pointer",
-        position: "absolute",
-        left: "80%",
-        top: "60%",
-        transition: "0.3s all ease-in-out",
-      },
     },
   },
 });
