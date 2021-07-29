@@ -37,7 +37,7 @@
   }
 } */
 
-.content-area{
+.content-area {
   height: calc(100vh - 82px);
   display: flex;
   width: 100%;

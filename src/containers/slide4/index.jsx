@@ -1,5 +1,5 @@
 import { Paragraph, Title } from "../../components";
-import { Grid, Container, withStyles } from "@material-ui/core";
+import { Grid, Container, Box, withStyles } from "@material-ui/core";
 import { styleSheet } from "../../jss/pages/slide4";
 import imgDemo1 from "../../assets/demo1.png";
 import imgDemo2 from "../../assets/demo2.png";
@@ -87,7 +87,7 @@ function Slide4(props) {
               {mockData.map((item, index) => {
                 return (
                   <div className="slide" key={index}>
-                    <div className="contentArea">
+                    <Box width="100%" className="contentArea">
                       <span className="slideNum">
                         {index + 1} of {mockData.length}
                       </span>
@@ -95,7 +95,7 @@ function Slide4(props) {
                       <div className={classes.bottomPart}>
                         <Title color="purple"> {item.title}</Title>
                       </div>
-                    </div>
+                    </Box>
                   </div>
                 );
               })}

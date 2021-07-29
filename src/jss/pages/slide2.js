@@ -1,6 +1,6 @@
 import cover from "../../assets/cover1.png";
 
-export const styleSheet = () => ({
+export const styleSheet = (theme) => ({
   root: {
     backgroundImage: `url(${cover})`,
     height: "100vh",
@@ -15,10 +15,14 @@ export const styleSheet = () => ({
     "& h2": {
       color: "white",
       fontSize: "40px",
-      fontWeight: "500",
+      fontWeight: "635",
       letterSpacing: "0",
       lineHeight: "48px",
       position: "relative",
+      [theme.breakpoints.down(635)]: {
+        fontSize: "20px",
+        lineHeight: "33px",
+      },
     },
     "& .overlay": {
       backgroundColor: "#2356d438",
@@ -32,6 +36,11 @@ export const styleSheet = () => ({
         left: "80%",
         top: "60%",
         transition: "0.2s all ease-in-out",
+        [theme.breakpoints.down(635)]: {
+          top: "70%",
+          left: 0,
+          right: 0,
+        },
       },
     },
   },

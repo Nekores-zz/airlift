@@ -1,7 +1,7 @@
 import "../../pages/App";
 import { Button, Paragraph, Title } from "../../components";
 import StatusLoader from "../../components/StatusLoader";
-import { Grid, Container, withStyles } from "@material-ui/core";
+import { Grid, Container, withStyles, Hidden } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import CheckIcon from "@material-ui/icons/Check";
 import { Link } from "react-router-dom";
@@ -65,9 +65,11 @@ function Slide1(props) {
               </>
             ) : null}
           </Grid>
-          <Grid item>
-            {!isPlugin ? <img src={avatar1} alt="avatar" /> : null}
-          </Grid>
+          <Hidden smDown>
+            <Grid item>
+              {!isPlugin ? <img src={avatar1} alt="avatar" /> : null}
+            </Grid>
+          </Hidden>
         </Grid>
       </Container>
     </div>

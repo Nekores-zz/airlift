@@ -30,9 +30,12 @@ export const styleSheet = () => ({
 
     "& .slide": {
       display: "inline-block",
-      height: "400px",
+      //   height: "400px",
       width: "100%",
       borderRadius: "40px",
+      "& img": {
+        // width: "100%",
+      },
     },
     "& .contentArea": {
       display: "flex",
@@ -43,7 +46,7 @@ export const styleSheet = () => ({
     },
     "& .slideNum": {
       position: "absolute",
-      top: 0,
+      top: "-30px",
     },
   },
 });
