@@ -1,4 +1,4 @@
-import { Paragraph, Title } from "../../components";
+import { Title } from "../../components";
 import { Grid, Container, Box, withStyles } from "@material-ui/core";
 import { styleSheet } from "../../jss/pages/slide4";
 import imgDemo1 from "../../assets/demo1.png";
@@ -49,23 +49,20 @@ const mockData = [
 function Slide4(props) {
   const { classes } = props;
   const history = useHistory();
-  const [demoData, setDemoData] = useState(null);
   const [index, setIndex] = useState(0);
-  const [tes, setTes] = useState(0);
 
   useEffect(() => {
     setTimeout(
       () =>
         setIndex((prevIndex) =>
           prevIndex === mockData.length - 1
-            ? console.log("Under construction!")
+            ? history.push("/onboarding")
             : prevIndex + 1
         ),
       5000
     );
-    setTes(0);
     return () => {};
-  }, [index]);
+  });
   return (
     <div className={classes.root}>
       <div className="overlay">
@@ -91,7 +88,7 @@ function Slide4(props) {
                       <span className="slideNum">
                         {index + 1} of {mockData.length}
                       </span>
-                      <img src={item.img} alt="demo 1 image" />
+                      <img src={item.img} alt="demo 1 img" />
                       <div className={classes.bottomPart}>
                         <Title color="purple"> {item.title}</Title>
                       </div>

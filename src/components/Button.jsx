@@ -8,6 +8,7 @@ function Button(props) {
       classes={{ root: classes.root }}
       variant="contained"
       color="primary"
+      {...props}
     >
       {children}
     </MuiButton>
