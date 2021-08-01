@@ -29,6 +29,11 @@ export const styleSheet = (theme) => ({
     backgroundColor: "#F4EBD7",
     padding: "30px",
     borderRadius: "16px",
+    [theme.breakpoints.up(549)]: {
+      paddingTop: "60px",
+      paddingBottom: 0,
+    },
+
     "& ul": {
       listStyle: "none",
       padding: 0,
@@ -37,6 +42,21 @@ export const styleSheet = (theme) => ({
       display: "flex",
       alignItems: "start",
       justifyContent: "space-between",
+      flexWrap: "wrap",
+      [theme.breakpoints.down(410)]: {
+        display: "block",
+      },
+      "& .userDetail": {
+        marginTop: "20px",
+      },
+      [theme.breakpoints.up(549)]: {
+        "& .userDetail": {
+          position: "relative",
+          top: "-48px",
+          marginTop: 0,
+        },
+      },
+
       "& li": {
         textDecoration: "none",
         "& h2": {
@@ -45,6 +65,7 @@ export const styleSheet = (theme) => ({
         },
 
         "& p": {
+          fontFamily: "'Poppins', sans-serif",
           margin: 0,
           fontSize: "12px",
           color: "#23262",
@@ -64,10 +85,30 @@ export const styleSheet = (theme) => ({
         "& .detailTwitter": {
           color: "#014235",
           fontWeight: "600",
+          width: "86px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          "& svg": {
+            fontSize: "18px",
+          },
+          "& svg:last-child": {
+            fontSize: "15px",
+          },
         },
         "& .detailBittrex": {
           color: "#014235",
           fontWeight: "600",
+          width: "86px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          "& svg": {
+            fontSize: "18px",
+          },
+          "& svg:last-child": {
+            fontSize: "15px",
+          },
         },
       },
     },

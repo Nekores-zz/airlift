@@ -8,6 +8,9 @@ import {
 import { Grid, withStyles, Hidden, FormControl } from "@material-ui/core";
 import { styleSheet } from "../../../jss/pages/slide5";
 import avatar from "../../../assets/avatar6.png";
+import icon1 from "../../../assets/coin.png";
+import CheckIcon from "@material-ui/icons/Check";
+import InfoIcon from "@material-ui/icons/Info";
 
 function Step6(props) {
   const { classes } = props;
@@ -64,14 +67,22 @@ function Step6(props) {
                   </li>
                 </ul>
               </li>
-              <li>
+              <li className="userDetail">
                 <ul>
                   <li>
+                    <img src={icon1} alt="icon img" />
                     <p className="detailName">John Doe</p>
                     <Title className="detailAmount">3894.8 VBK</Title>
                     <p className="detailsUsername">@johndoe</p>
-                    <p className="detailTwitter">Twitter</p>
-                    <p className="detailBittrex">Bittrex</p>
+                    <p className="detailTwitter">
+                      <CheckIcon classes={{ root: classes.checkIcon }} />{" "}
+                      Twitter <InfoIcon classes={{ root: classes.infoIcon }} />
+                    </p>
+                    <p className="detailBittrex">
+                      <CheckIcon classes={{ root: classes.checkIcon }} />
+                      Bittrex
+                      <InfoIcon classes={{ root: classes.infoIcon }} />
+                    </p>
                   </li>
                 </ul>
               </li>

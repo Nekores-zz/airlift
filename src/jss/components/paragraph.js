@@ -1,6 +1,6 @@
 export const styleSheet = () => ({
   root: {
-    // font-family: Poppins;
+    fontFamily: "'Poppins', sans-serif",
     textAlign: "left",
     fontStyle: "normal",
     fontWeight: "normal",
