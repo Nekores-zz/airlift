@@ -2,17 +2,20 @@ import { withStyles } from "@material-ui/core";
 import { styleSheet } from "../jss/components/pinCodeInput";
 
 function PinCodeInput(props) {
-  const { classes } = props;
+  const { classes, pinNum } = props;
   return (
     <div className={classes.root}>
-      <input className="pinInput" maxLength="1" autoFocus="true" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
-      <input className="pinInput" maxLength="1" />
+      {pinNum.split("").map((item, index) => {
+        return (
+          <input
+            key={index}
+            className="pinInput"
+            maxLength="1"
+            autoFocus={index === 0 ? true : false}
+            // defaultValue={item}
+          />
+        );
+      })}
     </div>
   );
 }

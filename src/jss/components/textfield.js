@@ -18,4 +18,7 @@ export const styleSheet = () => ({
     fontWeight: "600",
     position: "relative",
   },
+  inputIcon: {
+    color: "green",
+  },
 });

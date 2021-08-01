@@ -28,7 +28,7 @@ function Step5(props) {
 
           <br />
           <FormControl component="fieldset">
-            <PinCodeInput />
+            <PinCodeInput pinNum="09876543" />
           </FormControl>
           <br />
           <br />
