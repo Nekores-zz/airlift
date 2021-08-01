@@ -25,4 +25,51 @@ export const styleSheet = (theme) => ({
       marginBottom: "10px",
     },
   },
+  detailsCard: {
+    backgroundColor: "#F4EBD7",
+    padding: "30px",
+    borderRadius: "16px",
+    "& ul": {
+      listStyle: "none",
+      padding: 0,
+    },
+    "& > ul": {
+      display: "flex",
+      alignItems: "start",
+      justifyContent: "space-between",
+      "& li": {
+        textDecoration: "none",
+        "& h2": {
+          fontSize: "24px",
+          lineHeight: "38px",
+        },
+
+        "& p": {
+          margin: 0,
+          fontSize: "12px",
+          color: "#23262",
+          marginBottom: "5px",
+          "& strong": {
+            color: "#014235",
+            fontWeight: "800",
+          },
+        },
+        "& .detailName": {
+          fontSize: "12px",
+          fontWeight: "600",
+        },
+        "& .detailUsername": {
+          fontSize: "12px",
+        },
+        "& .detailTwitter": {
+          color: "#014235",
+          fontWeight: "600",
+        },
+        "& .detailBittrex": {
+          color: "#014235",
+          fontWeight: "600",
+        },
+      },
+    },
+  },
 });

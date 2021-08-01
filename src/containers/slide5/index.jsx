@@ -7,9 +7,11 @@ import Step1 from "./components/step1";
 import Step2 from "./components/step2";
 import Step3 from "./components/step3";
 import Step4 from "./components/step4";
+import Step5 from "./components/step5";
+import Step6 from "./components/step6";
 
 function getSteps() {
-  return ["1", "2", "3", "4"];
+  return ["1", "2", "3", "4", "5", "6"];
 }
 
 function Slide5(props) {
@@ -30,6 +32,10 @@ function Slide5(props) {
         return <Step3 handleNext={handleNext} />;
       case 3:
         return <Step4 handleNext={handleNext} />;
+      case 4:
+        return <Step5 handleNext={handleNext} />;
+      case 5:
+        return <Step6 handleNext={handleNext} />;
       default:
         return "Unknown step";
     }
