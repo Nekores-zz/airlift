@@ -5,7 +5,7 @@ function Card(props) {
   const { classes, icon, text } = props;
   return (
     <div className={classes.root}>
-      <img src={icon} />
+      <img src={icon} alt="avatar img" />
       <p>{text}</p>
     </div>
   );

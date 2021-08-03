@@ -1,11 +1,5 @@
 import { Paragraph, Title, Button, TextField } from "../../../components";
-import {
-  Grid,
-  withStyles,
-  Hidden,
-  InputAdornment,
-  IconButton,
-} from "@material-ui/core";
+import { Grid, withStyles, Hidden, InputAdornment } from "@material-ui/core";
 import { styleSheet } from "../../../jss/pages/slide5";
 import avatar from "../../../assets/avatar3.png";
 import CheckIcon from "@material-ui/icons/Check";

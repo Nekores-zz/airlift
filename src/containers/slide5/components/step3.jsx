@@ -1,20 +1,19 @@
-import { Paragraph, Title, Button, TextField, Card } from "../../../components";
+import { Paragraph, Title, Button, Card } from "../../../components";
 import {
   Grid,
   withStyles,
   Hidden,
-  InputAdornment,
-  IconButton,
   FormControl,
-  FormLabel,
   RadioGroup,
   FormControlLabel,
   Radio,
 } from "@material-ui/core";
 import { styleSheet } from "../../../jss/pages/slide5";
 import avatar from "../../../assets/avatar4.png";
-import CheckIcon from "@material-ui/icons/Check";
 import icon1 from "../../../assets/notification/0.png";
+import icon03 from "../../../assets/notification/03.png";
+import icon4 from "../../../assets/notification/4.png";
+import icon02 from "../../../assets/notification/02.png";
 
 function Step3(props) {
   const { classes } = props;
@@ -87,9 +86,9 @@ function Step3(props) {
             <Title> Perks Included</Title>
             <div className={classes.cardsWrapper}>
               <Card icon={icon1} text="Import your existing network" />
-              <Card icon={icon1} text="Import your existing network" />
-              <Card icon={icon1} text="Import your existing network" />
-              <Card icon={icon1} text="Import your existing network" />
+              <Card icon={icon02} text="Import your existing network" />
+              <Card icon={icon03} text="Import your existing network" />
+              <Card icon={icon4} text="Import your existing network" />
             </div>
           </div>
         </Grid>

@@ -1,3 +1,4 @@
+import vector1 from "../../assets/Vector1.png";
 export const styleSheet = (theme) => ({
   root: {
     width: "100%",
@@ -46,6 +47,41 @@ export const styleSheet = (theme) => ({
       [theme.breakpoints.down(410)]: {
         display: "block",
       },
+      "& > li": {
+        [theme.breakpoints.up(410)]: {
+          height: "156px",
+          position: "relative",
+        },
+        [theme.breakpoints.up(800)]: {
+          "&::after": {
+            width: "64px",
+            height: "20px",
+            content: '""',
+            display: "block",
+            backgroundSize: "auto",
+            backgroundImage: `url(${vector1})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            position: "absolute",
+            right: "-39px",
+            bottom: "22px",
+          },
+        },
+        [theme.breakpoints.down(410)]: {
+          display: "block",
+        },
+        "& .userDetail": {
+          marginTop: "20px",
+        },
+      },
+      [theme.breakpoints.down(500)]: {
+        "& .userDetail": {
+          marginTop: "0 !important",
+        },
+      },
+      "& > li:last-child::after": {
+        display: "none",
+      },
       "& .userDetail": {
         marginTop: "20px",
       },
@@ -60,8 +96,10 @@ export const styleSheet = (theme) => ({
       "& li": {
         textDecoration: "none",
         "& h2": {
+          color: "#014235 !important",
           fontSize: "24px",
-          lineHeight: "38px",
+          lineHeight: "34px",
+          marginTop: "-2px",
         },
 
         "& p": {
@@ -78,6 +116,7 @@ export const styleSheet = (theme) => ({
         "& .detailName": {
           fontSize: "12px",
           fontWeight: "600",
+          color: "#014235",
         },
         "& .detailUsername": {
           fontSize: "12px",

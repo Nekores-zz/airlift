@@ -1,11 +1,5 @@
-import {
-  Paragraph,
-  Title,
-  Button,
-  Card,
-  PinCodeInput,
-} from "../../../components";
-import { Grid, withStyles, Hidden, FormControl } from "@material-ui/core";
+import { Paragraph, Title, Button } from "../../../components";
+import { Grid, withStyles, Hidden } from "@material-ui/core";
 import { styleSheet } from "../../../jss/pages/slide5";
 import avatar from "../../../assets/avatar6.png";
 import icon1 from "../../../assets/coin.png";
